@@ -87,7 +87,8 @@ def send_telegram_notification(status, old_due, new_due):
         f"👤 账号: {masked_EMAIL}\n"
         f"📅 续期前到期：{old_due}\n"
         f"📅 续期后到期：{new_due}\n"
-        f"🕒 续期时间：{now}"
+        f"🕒 续期时间：{now}\n\n"
+        f"🤖 GitHub Action/eooce-HidenCloud"
     )
     url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage"
     payload = {
